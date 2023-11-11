@@ -1,11 +1,14 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
-namespace CaesarCipher
+namespace TinasAlgorithms
 {
-    internal class Program
+    internal class CaesarCipher
     {
-        public static string caesarCipher(string s, int k)
+        public static string CaesarCipherEncrypt(string s, int k)
         {
             char l;
             string alphabet = "abcdefghijklmnopqrstuvwxyz";
