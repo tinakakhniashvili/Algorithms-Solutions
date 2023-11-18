@@ -6,6 +6,10 @@
         {
             int j = 0;
             int targetIndex = 0;
+
+            if (nums.Length == 0)
+                throw new ArgumentException();
+
             if (nums.Contains(target))
             {
                 for (int i = 0; i < nums.Length; i++)
