@@ -1,12 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace TinasAlgorithms
+﻿namespace TinasAlgorithms
 {
     internal class SortedMatrixSearch
     {
+        public bool SearchMatrix(int[][] matrix, int target)
+        {
+            foreach (int[] row in matrix)
+            {
+                if (row.Contains(target)) return true;
+            }
+            return false;
+        }
     }
 }
