@@ -18,11 +18,6 @@
                     nums[j] = num;
                 }
             }
-
-            foreach (int i in nums)
-            {
-                Console.Write(i + " ");
-            }
         }
     }
 }
