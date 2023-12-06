@@ -24,7 +24,7 @@
             return isPalindrome;
         }
     }
-   /* public class ListNode
+    public class ListNode
     {
         public int val;
         public ListNode next;
@@ -33,5 +33,5 @@
             this.val = val;
             this.next = next;
         }
-    } */
+    } 
 }
