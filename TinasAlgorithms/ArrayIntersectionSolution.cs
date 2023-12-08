@@ -4,22 +4,24 @@
     {
         public int[] Intersect(int[] nums1, int[] nums2)
         {
+            Array.Sort(nums1);
+            Array.Sort(nums2);
+
             List<int> list = new List<int>();
 
-            for (int i = 0; i < nums1.Length; i++)
+            int index1 = 0;
+            int index2 = 0;
+
+            while (index1 < nums1.Length && index2 < nums2.Length)
             {
-                for (int j = 0; j < nums2.Length; j++)
+                if (nums1[index1] == nums2[index2])
                 {
-                    if (list.Count == nums2.Length)
-                    {
-                        return list.ToArray();
-                    }
-                    else if (nums1[i] == nums2[j])
-                    {
-                        list.Add(nums2[j]);
-                        break; 
-                    }
+                    list.Add(nums1[index1]);
+                    index1++;
+                    index2++;
                 }
+                else if (nums1[index1] < nums2[index2]) index1++;
+                else index2++;
             }
 
             return list.ToArray();
